@@ -1,14 +1,100 @@
 // https://meta.discourse.org/t/how-to-develop-custom-themes/60848
 
 $red: #944444;
+$red-light: lighten($red, 40%);
+
 $dark: #222222;
 $light: #fefefe;
 $grey-1: #cecece;
 $grey-2: #bdbdbd;
-$grey-4: #424242;
-$grey-3: #757575;
+$grey-3: #a0a0a0;
+$grey-4: #757575;
+$grey-5: #424242;
 
+$header-height: 36px;
 
 html, body {
     font-family: Nunito !important;
+}
+
+.d-header {
+    box-shadow: none;
+    height: $header-height;
+    padding: 0;
+
+    .wrap {
+        max-width: initial;
+        padding: 0;
+    }
+
+    .contents {
+        margin: 0;
+    }
+
+    .icons {
+        a {
+           height: $header-height;
+           padding: 0 10px !important;
+           margin-top: -1px;
+           display: flex !important;
+           align-items: center;
+        }
+        i {
+            height: $header-height * .75 !important;
+            width: $header-height * .75 !important;
+            font-size: $header-height * .5 !important;
+            line-height:  $header-height * .75 !important;
+        }
+    }
+
+    .title a {
+        background: $light;
+        display: block;
+    }
+
+    img {
+        height: 36px;
+        &.avatar {
+            height: $header-height * .75;
+            width: $header-height * .75;
+        }
+    }
+}
+
+.select2-choice,
+.select2-drop {
+    background: $light !important;
+}
+
+.menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover,
+.select2-results .select2-highlighted {
+    background: $red-light;
+}
+
+.dashboard-stats table thead th {
+    background: $dark;
+    color: $light;
+}
+
+table,
+.topic-list > tbody > tr,
+.category-list tbody tr {
+    border-color: $grey-3 !important;
+}
+
+.title {
+    font-weight: 600;
+
+    &.visited {
+        font-weight: 300;
+    }
+}
+
+.category-description,
+.topic-list a.title.visited:not(.badge-notification) {
+        color: $grey-5;
+}
+
+.badge-notification {
+    background-color: $dark;
 }
