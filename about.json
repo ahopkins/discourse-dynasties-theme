@@ -1,5 +1,19 @@
 {
    "name" : "Dynasties theme component",
    "about_url": "git@github.com:ahopkins/discourse-dynasties-theme.git",
-   "license_url": "git@github.com:ahopkins/discourse-dynasties-theme.git/blob/master/LICENSE"
+   "license_url": "git@github.com:ahopkins/discourse-dynasties-theme.git/blob/master/LICENSE",
+   "color_schemes": {
+        "Dynasties": {
+          "primary": "222222",
+          "secondary": "cecece",
+          "tertiary": "944444",
+          "quaternary": "944444",
+          "header_background": "222222",
+          "header_primary": "fefefe",
+          "highlight": "ffff4d",
+          "danger": "222222",
+          "success": "009900",
+          "love": "fa6c8d"
+        }
+    }
 }
