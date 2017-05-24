@@ -61,14 +61,60 @@ html, body {
     }
 }
 
+.topic-avatar,
+.topic-body,
+#reply-control .wmd-controls .d-editor-input, #reply-control .wmd-controls .d-editor-preview,
+.select2-container-multi .select2-choices,
+.dropdown-menu a,
 .select2-choice,
 .select2-drop {
-    background: $light !important;
+    background: $light;
 }
 
-.menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover,
+article  {
+    & > .row {
+        display: flex;
+    }
+
+    .topic-map section {
+        background-color: $grey-1;
+    }
+}
+
+.small-action {
+    margin: 10px;
+    background-color: $red-light;
+    border: 0;
+    .small-action-desc {
+        color: $red !important;
+    }
+    .topic-avatar {
+        background-color: $red-light;
+        i {
+            color: $red;
+        }
+    }
+}
+
+.composer-popup,
+div.menu-links-header a:hover,
+.user-menu .notifications li:hover,
+.dropdown-menu li>a:hover, 
+.dropdown-menu .active>a, 
+.dropdown-menu .active>a:hover,
+.menu-panel ul.menu-links li a:hover, 
+.menu-panel ul li.heading a:hover,
 .select2-results .select2-highlighted {
     background: $red-light;
+}
+
+
+div.menu-links-header a {
+    color: $dark;
+}
+.settings .setting.overridden h3 {
+    color: $red;
+    font-weight: 700;
 }
 
 .dashboard-stats table thead th {
@@ -76,6 +122,8 @@ html, body {
     color: $light;
 }
 
+.topic-avatar,
+.topic-body,
 table,
 .topic-list > tbody > tr,
 .category-list tbody tr {
@@ -98,3 +146,13 @@ table,
 .badge-notification {
     background-color: $dark;
 }
+
+.select2-container-multi .select2-choices .select2-search-field input,
+body textarea,
+body input[type="text"], body input[type="password"], body input[type="datetime"], body input[type="datetime-local"], body input[type="date"], body input[type="month"], body input[type="time"], body input[type="week"], body input[type="number"], body input[type="email"], body input[type="url"], body input[type="search"], body input[type="tel"], body input[type="color"] {
+    background-color: $light !important;
+    border: 1px solid #e9e9e9;
+    border-radius: 0;
+    box-shadow: none;
+}
+
