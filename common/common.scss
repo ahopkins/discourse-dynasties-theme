@@ -1,8 +1,5 @@
-@font-face {
-  font-family: Roboto;
-  src: url($roboto) format('woff2')
-}
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900);
 
-body {
-    font-family: Roboto;
+html, body {
+    font-family: Nunito;
 }

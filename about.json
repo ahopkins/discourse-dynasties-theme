@@ -1,8 +1,5 @@
 {
-   "name" : "Roboto theme component",
-   "about_url": "https://github.com/SamSaffron/discourse-roboto-theme",
-   "license_url": "https://github.com/SamSaffron/discourse-roboto-theme/blob/master/LICENSE",
-   "assets": {
-        "roboto": "assets/roboto.woff2"
-   }
+   "name" : "Dynasties theme component",
+   "about_url": "git@github.com:ahopkins/discourse-dynasties-theme.git",
+   "license_url": "git@github.com:ahopkins/discourse-dynasties-theme.git/blob/master/LICENSE"
 }
