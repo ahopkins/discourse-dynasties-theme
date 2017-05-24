@@ -1,5 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900);
+$red: #944444;
+$dark: #222222;
+$light: #fefefe;
+$grey-1: #cecece;
+$grey-2: #bdbdbd;
+$grey-4: #424242;
+$grey-3: #757575;
+
 
 html, body {
-    font-family: Nunito;
+    font-family: Nunito !important;
+    background-color: $grey-4;
 }
