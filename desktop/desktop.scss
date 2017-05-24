@@ -1,0 +1,14 @@
+.game-menu {
+    position: fixed;
+    z-index: 1001;
+    left: 94px;
+
+    a {
+        display: block;
+        height: $header-height;
+        line-height: $header-height;
+        background-color: $red;
+        color: $light;
+        padding: 0 1rem;
+    }
+}
